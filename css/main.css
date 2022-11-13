@@ -1,0 +1,109 @@
+/* From FrontendMentor */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Custom styles */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    font-family: sans-serif;
+}
+
+.widget {
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    min-width: 320px;
+    
+    
+
+
+}
+
+@media screen and (max-width: 768px) {
+     .widget {
+        /* flex-direction: wrap; */
+        flex-direction: column;
+        height: 200vh;
+        
+     }
+     .widget .left {
+        text-align: center;
+        padding: 2rem;
+     }
+     .right {
+        order: -1;
+     }
+     .chars {
+        flex-direction: column;
+     }
+
+}
+
+.left {
+    padding: 3rem 6rem 3rem 3rem;
+    color: white;
+    flex-basis: 50%;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.title span {
+    color: hsl(277, 64%, 61%)
+    ;
+}
+
+.description {
+    color: lightgray;
+    line-height: 2;
+}
+
+.chars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.char {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.char span {
+    display: block;
+    font-weight: lighter;
+    font-size: 1rem;
+    margin-top: .7rem;
+}
+ .right {
+    flex-basis: 50%;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.right::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, .7);;
+}
+
